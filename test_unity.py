@@ -1,5 +1,5 @@
-import core as unity
+import unityAI
 
-client_gpt3 = unity.get_client('openai-gpt3', 'your-api-key')
-result = client_gpt3.generate_text('Once upon a time', 'Mention a dragon in the story')
+client_gpt3 = unityAI.get_client('openai-dalle3', 'api_key')
+result = client_gpt3.generate_image('Sir', True, 'Sir')
 print(result)
