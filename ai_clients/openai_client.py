@@ -16,7 +16,7 @@ class OpenAIClient:
             model=self.model,
             messages=messages
         )
-        return  completion.choices[0].message.content
+        return completion.choices[0].message.content
     
     def generate_image(self, prompt, asImage = False, imageName = None, size = '1024x1024', quality = "standard", n = 1, **kwargs):
         completion = self.client.images.generate(
