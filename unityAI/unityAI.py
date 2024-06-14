@@ -38,6 +38,7 @@ def get_client(service, api_key):
     }
     google_service_model_mapping = {
         'gemini': 'gemini-1.5-flash',
+        'gemini-1.5-pro': 'gemini-1.5-pro-latest',
     }
 
     if service in openai_service_model_mapping:
